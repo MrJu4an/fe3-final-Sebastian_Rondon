@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.favButton{
+  background-color: rgba(136, 136, 136, 0.116);
+  padding: 10px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.favButton:hover{
+  background-color: blue;
+}
+
+h1{
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  width: 85vw;
+  justify-content:space-between;
+  padding: 1rem;
+  margin-bottom: 32px;
+}
+
+nav div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+a:hover{
+  color: rgb(136, 136, 136);
+} 
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  bottom: 0;
+  width: 90%;
+  height: 40px;
+  margin-top: 2rem;
+}
+
+footer div {
+  display: flex;
+  flex-direction: row;
+}
+
+footer > div > img{
+  width: 200px;
+  margin: 0;
+}
+
+footer > div > a > img{
+  width: 35px;
+  margin: 0;
+}
+footer > div > p{
+  margin: 0;
+  padding-top: 0.7rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-around;
+  width: 300px;
+  height: 100px;
+  margin-bottom: 30%;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  border: 0.5px solid rgb(136, 136, 136);
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+}
+
+.card:hover{
+  border: 0.5px solid rgb(206, 217, 142);
+}
+
+.card-grid{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  width: 90vw;
+  height: auto;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+table {
+ border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+    border: 1px solid #ccc;
+
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.dark{
+  background-color: #12121296;
+  color: white;
+}
+.dark > a {
+  color: white;
+}
+
+.dark > div > a {
+  color: white;
+}
+
+.theme-toggle {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 10px;
+  border-radius: 50%; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  cursor: pointer;
+  height: 40px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.3); 
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.nav-options {
+  align-items: center;
+}
