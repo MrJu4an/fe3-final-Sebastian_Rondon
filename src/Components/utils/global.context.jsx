@@ -5,7 +5,7 @@ import axios from 'axios'
 const ContextGlobal = createContext();
 
 const lsFavs = JSON.parse(localStorage.getItem('favs')) || []
-const lsTheme = localStorage.getItem('theme') === 'false' ? false : true
+const lsTheme = localStorage.getItem('theme') === 'true' ? true : false
 
 const initialState = {
   dentists: [],
